@@ -1,5 +1,16 @@
 {
-  "version": "1.0.0-*",
+  "copyright": "Chris Close",
+  "summary": "ASP.NET S3 XmlRepository Implementation",
+  "description": "An implementation of IXmlRepository for AWS S3 storage for use in ASP.NET Core",
+  "licenseUrl": "https://opensource.org/licenses/MIT",
+  "owners": [ "Chris Close" ],
+  "projectUrl": "https://github.com/CL0SeY/aspnet-s3xmlrepository",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CL0SeY/aspnet-s3xmlrepository"
+  },
+  "authors": [ "Chris Close" ],
+  "version": "1.0.0-beta",
   "compilationOptions": {
     "emitEntryPoint": false
   },

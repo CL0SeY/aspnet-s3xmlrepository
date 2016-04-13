@@ -59,7 +59,8 @@ namespace aspnet_s3_xmlrepository
                 {
                     BucketName = _configuration.BucketName,
                     Key = DateTime.UtcNow.ToString("s") + "_" + friendlyName,
-                    InputStream = memoryStream
+                    InputStream = memoryStream,
+                    ServerSideEncryptionMethod = ServerSideEncryptionMethod.AES256
                 };
                 var result = _s3Client.PutObjectAsync(request).Result;
             }
