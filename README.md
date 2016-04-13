@@ -1,4 +1,4 @@
-# ASP.NET S3XmlRepository
+# ASP.NET AWS S3 XmlRepository
 An implementation of IXmlRepository for S3 storage for use in ASP.NET Core
 
 This allows ASP.NET Core to store its keys in S3. (For information on the IXmlRepository class see here: http://docs.asp.net/en/latest/security/data-protection/extensibility/key-management.html#ixmlrepository)
