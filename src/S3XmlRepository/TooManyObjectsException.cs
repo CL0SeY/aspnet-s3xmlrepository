@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace aspnet_s3_xmlrepository
+namespace S3XmlRepository
 {
     internal class TooManyObjectsException : Exception
     {

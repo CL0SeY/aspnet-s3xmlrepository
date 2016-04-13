@@ -8,14 +8,14 @@ using Amazon.S3.Model;
 using System.Xml;
 using System.Linq;
 
-namespace aspnet_s3_xmlrepository
+namespace S3XmlRepository
 {
-    public class S3XmlRepository : IXmlRepository
+    public class S3XmlRepositoryImpl : IXmlRepository
     {
         private IAmazonS3 _s3Client;
         private S3XmlRepositoryConfiguration _configuration;
 
-        public S3XmlRepository(IAmazonS3 s3Client, S3XmlRepositoryConfiguration configuration)
+        public S3XmlRepositoryImpl(IAmazonS3 s3Client, S3XmlRepositoryConfiguration configuration)
         {
             _s3Client = s3Client;
             _configuration = configuration;

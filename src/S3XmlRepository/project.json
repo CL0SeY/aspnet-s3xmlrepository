@@ -10,7 +10,7 @@
     "url": "https://github.com/CL0SeY/aspnet-s3xmlrepository"
   },
   "authors": [ "Chris Close" ],
-  "version": "1.0.0-beta",
+  "version": "1.0.1-beta",
   "compilationOptions": {
     "emitEntryPoint": false
   },

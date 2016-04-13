@@ -3,7 +3,7 @@ using Amazon.S3;
 using Microsoft.AspNet.DataProtection.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace aspnet_s3_xmlrepository
+namespace S3XmlRepository
 {
     public static class S3DataProtectionBuilderExtensions
     {
@@ -45,7 +45,7 @@ namespace aspnet_s3_xmlrepository
 
         public static ServiceDescriptor IXmlRepository_S3(S3XmlRepositoryConfiguration configuration)
         {
-            return ServiceDescriptor.Singleton<IXmlRepository>(services => new S3XmlRepository(services.GetService<AmazonS3Client>(), configuration));
+            return ServiceDescriptor.Singleton<IXmlRepository>(services => new S3XmlRepositoryImpl(services.GetService<AmazonS3Client>(), configuration));
         }
     }
 }

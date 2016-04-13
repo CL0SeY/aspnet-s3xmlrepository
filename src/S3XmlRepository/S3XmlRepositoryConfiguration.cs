@@ -1,4 +1,4 @@
-﻿namespace aspnet_s3_xmlrepository
+﻿namespace S3XmlRepository
 {
     public class S3XmlRepositoryConfiguration
     {
