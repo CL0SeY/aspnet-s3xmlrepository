@@ -5,7 +5,7 @@ This allows ASP.NET Core to store its keys in S3. (For information on the IXmlRe
 
 This is useful in load balancing scenarios where cookies may be encrypted using different keys.
 
-It is highly recommended you encrypt your bucket and secure it appropriately.
+Items are encrypted at rest in S3 using AES256.
 
 ## Configuration
 In Startup.cs:
