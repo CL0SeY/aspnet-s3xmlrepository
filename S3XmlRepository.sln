@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E83298AD-0B63-4124-8036-5B4E45800BBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5BCB1DEA-0AB3-46C7-AD83-5A8AD81833A5}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "S3XmlRepository", "src\S3XmlRepository\S3XmlRepository.xproj", "{50956399-40F8-466F-B4D6-C6A435652CD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50956399-40F8-466F-B4D6-C6A435652CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50956399-40F8-466F-B4D6-C6A435652CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50956399-40F8-466F-B4D6-C6A435652CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50956399-40F8-466F-B4D6-C6A435652CD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{50956399-40F8-466F-B4D6-C6A435652CD7} = {E83298AD-0B63-4124-8036-5B4E45800BBA}
+	EndGlobalSection
+EndGlobal

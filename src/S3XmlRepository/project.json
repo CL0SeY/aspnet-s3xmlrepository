@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0-*",
+  "compilationOptions": {
+    "emitEntryPoint": false
+  },
+
+  "dependencies": {
+    "AWSSDK.S3": "3.2.3-beta",
+    "Microsoft.AspNet.DataProtection": "1.0.0-rc1-final",
+    "PCLCrypto": "2.0.147",
+    "System.Linq": "4.0.1-beta-23516"
+  },
+
+  "commands": {
+  },
+
+  "frameworks": {
+    "net451": {
+      "dependencies": {
+      }
+    },
+    "dotnet5.4": {
+      "dependencies": {
+        "System.Xml.XmlDocument": "4.0.1-beta-23516"
+      }
+    }
+  }
+}
