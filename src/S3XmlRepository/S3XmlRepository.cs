@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Xml.Linq;
-using Microsoft.AspNet.DataProtection.Repositories;
 using Amazon.S3;
 using Amazon.S3.Model;
-using System.Xml;
 using System.Linq;
+using Microsoft.AspNetCore.DataProtection.Repositories;
 
 namespace S3XmlRepository
 {
     public class S3XmlRepositoryImpl : IXmlRepository
     {
-        private IAmazonS3 _s3Client;
-        private S3XmlRepositoryConfiguration _configuration;
+        private readonly IAmazonS3 _s3Client;
+        private readonly S3XmlRepositoryConfiguration _configuration;
 
         public S3XmlRepositoryImpl(IAmazonS3 s3Client, S3XmlRepositoryConfiguration configuration)
         {
@@ -23,8 +22,7 @@ namespace S3XmlRepository
 
         public IReadOnlyCollection<XElement> GetAllElements()
         {
-            var request = new ListObjectsRequest();
-            request.BucketName = _configuration.BucketName;
+            var request = new ListObjectsRequest {BucketName = _configuration.BucketName};
             var result = _s3Client.ListObjectsAsync(request).Result;
             if (result.IsTruncated)
             {
@@ -36,11 +34,13 @@ namespace S3XmlRepository
 
         private XElement GetElement(string key)
         {
-            var request = new GetObjectRequest();
-            request.BucketName = _configuration.BucketName;
-            request.Key = key;
+            var request = new GetObjectRequest
+            {
+                BucketName = _configuration.BucketName,
+                Key = key
+            };
+            // Does not support non-async in .NET Core:
             var result = _s3Client.GetObjectAsync(request).Result;
-            XmlDocument document = new XmlDocument();
             using (var stream = result.ResponseStream)
             {
                 var xDocument = XDocument.Load(stream);
@@ -62,6 +62,7 @@ namespace S3XmlRepository
                     InputStream = memoryStream,
                     ServerSideEncryptionMethod = ServerSideEncryptionMethod.AES256
                 };
+                // Does not support non-async in .NET Core:
                 var result = _s3Client.PutObjectAsync(request).Result;
             }
         }

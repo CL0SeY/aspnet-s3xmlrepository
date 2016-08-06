@@ -1,6 +1,7 @@
 ﻿using System;
 using Amazon.S3;
-using Microsoft.AspNet.DataProtection.Repositories;
+using Microsoft.AspNetCore.DataProtection;
+using Microsoft.AspNetCore.DataProtection.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace S3XmlRepository
@@ -26,13 +27,12 @@ namespace S3XmlRepository
         }
 
         /// <summary>
-        /// Configures the data protection system to persist keys to the specified directory.
-        /// This path may be on the local machine or may point to a UNC share.
+        /// Configures the data protection system to persist keys to Amazon S3.
         /// </summary>
         /// <param name="builder">The <see cref="IDataProtectionBuilder"/>.</param>
-        /// <param name="directory">The directory in which to store keys.</param>
+        /// <param name="configuration">The configuration item.</param>
         /// <returns>A reference to the <see cref="IDataProtectionBuilder" /> after this operation has completed.</returns>
-        public static Microsoft.AspNet.DataProtection.DataProtectionConfiguration PersistKeysToS3(this Microsoft.AspNet.DataProtection.DataProtectionConfiguration builder, S3XmlRepositoryConfiguration configuration)
+        public static IDataProtectionBuilder PersistKeysToS3(this IDataProtectionBuilder builder, S3XmlRepositoryConfiguration configuration)
         {
             if (builder == null)
             {

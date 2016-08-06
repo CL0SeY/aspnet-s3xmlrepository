@@ -1,28 +1,26 @@
 {
   "copyright": "Chris Close",
-  "summary": "ASP.NET S3 XmlRepository Implementation",
-  "description": "An implementation of IXmlRepository for AWS S3 storage for use in ASP.NET Core",
-  "licenseUrl": "https://opensource.org/licenses/MIT",
-  "owners": [ "Chris Close" ],
-  "projectUrl": "https://github.com/CL0SeY/aspnet-s3xmlrepository",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/CL0SeY/aspnet-s3xmlrepository"
+  "packOptions": {
+    "description": "An implementation of IXmlRepository for AWS S3 storage for use in ASP.NET Core",
+    "summary": "ASP.NET S3 XmlRepository Implementation",
+    "licenseUrl": "https://opensource.org/licenses/MIT",
+    "authors": [ "Chris Close" ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/CL0SeY/aspnet-s3xmlrepository"
+    },
+    "projectUrl": "https://github.com/CL0SeY/aspnet-s3xmlrepository",
+    "owners": [ "Chris Close" ]
   },
-  "authors": [ "Chris Close" ],
-  "version": "1.0.1-beta",
-  "compilationOptions": {
+  "version": "1.0.2-beta",
+  "buildOptions": {
     "emitEntryPoint": false
   },
 
   "dependencies": {
-    "AWSSDK.S3": "3.2.3-beta",
-    "Microsoft.AspNet.DataProtection": "1.0.0-rc1-final",
-    "PCLCrypto": "2.0.147",
-    "System.Linq": "4.0.1-beta-23516"
-  },
-
-  "commands": {
+    "AWSSDK.S3": "3.2.6-beta",
+    "Microsoft.AspNetCore.DataProtection": "1.0.0",
+    "PCLCrypto": "2.0.147"
   },
 
   "frameworks": {
@@ -30,9 +28,13 @@
       "dependencies": {
       }
     },
-    "dotnet5.4": {
+    "netstandard1.6": {
+      "imports": [
+        "dotnet5.6",
+        "portable-net45+win8"
+      ],
       "dependencies": {
-        "System.Xml.XmlDocument": "4.0.1-beta-23516"
+        "NETStandard.Library": "1.6.0"
       }
     }
   }

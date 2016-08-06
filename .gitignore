@@ -49,3 +49,6 @@ Temporary Items
 *.user
 *.suo
 artifacts/
+bin/
+obj/
+.vs/
