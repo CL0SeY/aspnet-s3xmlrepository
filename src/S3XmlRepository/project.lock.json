@@ -3,7 +3,7 @@
   "version": 2,
   "targets": {
     ".NETFramework,Version=v4.5.1": {
-      "AWSSDK.Core/3.2.6-beta": {
+      "AWSSDK.Core/3.3.4": {
         "type": "package",
         "compile": {
           "lib/net45/AWSSDK.Core.dll": {}
@@ -12,10 +12,10 @@
           "lib/net45/AWSSDK.Core.dll": {}
         }
       },
-      "AWSSDK.S3/3.2.6-beta": {
+      "AWSSDK.S3/3.3.1.1": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.2.6-beta, 3.3.0-beta)"
+          "AWSSDK.Core": "[3.3.4, 3.4.0)"
         },
         "compile": {
           "lib/net45/AWSSDK.S3.dll": {}
@@ -463,7 +463,7 @@
       }
     },
     ".NETStandard,Version=v1.6": {
-      "AWSSDK.Core/3.2.6-beta": {
+      "AWSSDK.Core/3.3.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.0.1",
@@ -495,10 +495,10 @@
           "lib/netstandard1.3/AWSSDK.Core.dll": {}
         }
       },
-      "AWSSDK.S3/3.2.6-beta": {
+      "AWSSDK.S3/3.3.1.1": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.2.6-beta, 3.3.0-beta)"
+          "AWSSDK.Core": "[3.3.4, 3.4.0)"
         },
         "compile": {
           "lib/netstandard1.3/AWSSDK.S3.dll": {}
@@ -2199,12 +2199,12 @@
     }
   },
   "libraries": {
-    "AWSSDK.Core/3.2.6-beta": {
-      "sha512": "akm4Nd5M5CCdrclnQ8ZHxFmd/9rwdZzB/Oj1ImTVtl5DgoNWPzLLp0tzz5w5I4M94QGstUNOndq9vYSIIY20jA==",
+    "AWSSDK.Core/3.3.4": {
+      "sha512": "y8YJxSMr/zxGUhsGxH5YmC254m5ivgwl/sgsGOEfsEoEJ1oJWQmB5HfzwwVMMoa74gePK4sVOJpEHycVmHTMGA==",
       "type": "package",
-      "path": "AWSSDK.Core/3.2.6-beta",
+      "path": "AWSSDK.Core/3.3.4",
       "files": [
-        "AWSSDK.Core.3.2.6-beta.nupkg.sha512",
+        "AWSSDK.Core.3.3.4.nupkg.sha512",
         "AWSSDK.Core.nuspec",
         "lib/Xamarin.Mac20/AWSSDK.Core.XML",
         "lib/Xamarin.Mac20/AWSSDK.Core.dll",
@@ -2221,9 +2221,13 @@
         "lib/net45/AWSSDK.Core.pdb",
         "lib/netstandard1.3/AWSSDK.Core.dll",
         "lib/netstandard1.3/AWSSDK.Core.pdb",
+        "lib/netstandard1.3/AWSSDK.Core.xml",
         "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/AWSSDK.Core.XML",
         "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/AWSSDK.Core.dll",
         "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/AWSSDK.Core.pdb",
+        "lib/uap/AWSSDK.Core.XML",
+        "lib/uap/AWSSDK.Core.dll",
+        "lib/uap/AWSSDK.Core.pdb",
         "lib/windows8/AWSSDK.Core.XML",
         "lib/windows8/AWSSDK.Core.dll",
         "lib/windows8/AWSSDK.Core.pdb",
@@ -2236,12 +2240,12 @@
         "tools/account-management.ps1"
       ]
     },
-    "AWSSDK.S3/3.2.6-beta": {
-      "sha512": "F/GxaJpkrb1HrkGjk4Hk+S5lX0E5d61+yBia+NAmDh9Z1s1Yg39soUxYZNXISNpHwwbxKdh2Ny9dILtwx3JCgw==",
+    "AWSSDK.S3/3.3.1.1": {
+      "sha512": "4fJQPlSwJ6GGDSlS3LpZPT6HiZ1ak+w3axr4XgyJoQA5WYKKSaL8/VIkqpXEuFw+V6wW1KHkIE2P9d9AQGgMAw==",
       "type": "package",
-      "path": "AWSSDK.S3/3.2.6-beta",
+      "path": "AWSSDK.S3/3.3.1.1",
       "files": [
-        "AWSSDK.S3.3.2.6-beta.nupkg.sha512",
+        "AWSSDK.S3.3.3.1.1.nupkg.sha512",
         "AWSSDK.S3.nuspec",
         "analyzers/dotnet/cs/AWSSDK.S3.CodeAnalysis.dll",
         "lib/net35/AWSSDK.S3.XML",
@@ -2252,9 +2256,13 @@
         "lib/net45/AWSSDK.S3.pdb",
         "lib/netstandard1.3/AWSSDK.S3.dll",
         "lib/netstandard1.3/AWSSDK.S3.pdb",
+        "lib/netstandard1.3/AWSSDK.S3.xml",
         "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/AWSSDK.S3.XML",
         "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/AWSSDK.S3.dll",
         "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/AWSSDK.S3.pdb",
+        "lib/uap/AWSSDK.S3.XML",
+        "lib/uap/AWSSDK.S3.dll",
+        "lib/uap/AWSSDK.S3.pdb",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
@@ -6040,7 +6048,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "AWSSDK.S3 >= 3.2.6-beta",
+      "AWSSDK.S3 >= 3.3.1.1",
       "Microsoft.AspNetCore.DataProtection >= 1.0.0",
       "PCLCrypto >= 2.0.147"
     ],

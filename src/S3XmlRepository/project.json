@@ -12,13 +12,13 @@
     "projectUrl": "https://github.com/CL0SeY/aspnet-s3xmlrepository",
     "owners": [ "Chris Close" ]
   },
-  "version": "1.0.2-beta",
+  "version": "1.0.3",
   "buildOptions": {
     "emitEntryPoint": false
   },
 
   "dependencies": {
-    "AWSSDK.S3": "3.2.6-beta",
+    "AWSSDK.S3": "3.3.1.1",
     "Microsoft.AspNetCore.DataProtection": "1.0.0",
     "PCLCrypto": "2.0.147"
   },
