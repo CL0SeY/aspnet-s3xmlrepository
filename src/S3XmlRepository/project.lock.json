@@ -3,7 +3,7 @@
   "version": 2,
   "targets": {
     ".NETFramework,Version=v4.5.1": {
-      "AWSSDK.Core/3.3.4": {
+      "AWSSDK.Core/3.3.6": {
         "type": "package",
         "compile": {
           "lib/net45/AWSSDK.Core.dll": {}
@@ -12,10 +12,10 @@
           "lib/net45/AWSSDK.Core.dll": {}
         }
       },
-      "AWSSDK.S3/3.3.1.1": {
+      "AWSSDK.S3/3.3.5.1": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.4, 3.4.0)"
+          "AWSSDK.Core": "[3.3.6, 3.4.0)"
         },
         "compile": {
           "lib/net45/AWSSDK.S3.dll": {}
@@ -463,7 +463,7 @@
       }
     },
     ".NETStandard,Version=v1.6": {
-      "AWSSDK.Core/3.3.4": {
+      "AWSSDK.Core/3.3.6": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.0.1",
@@ -495,10 +495,10 @@
           "lib/netstandard1.3/AWSSDK.Core.dll": {}
         }
       },
-      "AWSSDK.S3/3.3.1.1": {
+      "AWSSDK.S3/3.3.5.1": {
         "type": "package",
         "dependencies": {
-          "AWSSDK.Core": "[3.3.4, 3.4.0)"
+          "AWSSDK.Core": "[3.3.6, 3.4.0)"
         },
         "compile": {
           "lib/netstandard1.3/AWSSDK.S3.dll": {}
@@ -2199,20 +2199,22 @@
     }
   },
   "libraries": {
-    "AWSSDK.Core/3.3.4": {
-      "sha512": "y8YJxSMr/zxGUhsGxH5YmC254m5ivgwl/sgsGOEfsEoEJ1oJWQmB5HfzwwVMMoa74gePK4sVOJpEHycVmHTMGA==",
+    "AWSSDK.Core/3.3.6": {
+      "sha512": "eYr6ijdNr66DOxlwECayDNOPmt3V/k/gTfy8+RQdTh1NRD04dPrufuzXOlJE9FC5TrxC4dNZy2xcb5no02xmTg==",
       "type": "package",
-      "path": "AWSSDK.Core/3.3.4",
+      "path": "AWSSDK.Core/3.3.6",
       "files": [
-        "AWSSDK.Core.3.3.4.nupkg.sha512",
+        "AWSSDK.Core.3.3.6.nupkg.sha512",
         "AWSSDK.Core.nuspec",
+        "lib/MonoAndroid10/AWSSDK.Core.XML",
+        "lib/MonoAndroid10/AWSSDK.Core.dll",
+        "lib/MonoAndroid10/AWSSDK.Core.pdb",
+        "lib/MonoTouch10/AWSSDK.Core.XML",
+        "lib/MonoTouch10/AWSSDK.Core.dll",
         "lib/Xamarin.Mac20/AWSSDK.Core.XML",
         "lib/Xamarin.Mac20/AWSSDK.Core.dll",
         "lib/Xamarin.iOS10/AWSSDK.Core.XML",
         "lib/Xamarin.iOS10/AWSSDK.Core.dll",
-        "lib/monoandroid/AWSSDK.Core.XML",
-        "lib/monoandroid/AWSSDK.Core.dll",
-        "lib/monoandroid/AWSSDK.Core.pdb",
         "lib/net35/AWSSDK.Core.XML",
         "lib/net35/AWSSDK.Core.dll",
         "lib/net35/AWSSDK.Core.pdb",
@@ -2222,15 +2224,15 @@
         "lib/netstandard1.3/AWSSDK.Core.dll",
         "lib/netstandard1.3/AWSSDK.Core.pdb",
         "lib/netstandard1.3/AWSSDK.Core.xml",
-        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/AWSSDK.Core.XML",
-        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/AWSSDK.Core.dll",
-        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/AWSSDK.Core.pdb",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.Core.pdb",
         "lib/uap/AWSSDK.Core.XML",
         "lib/uap/AWSSDK.Core.dll",
         "lib/uap/AWSSDK.Core.pdb",
-        "lib/windows8/AWSSDK.Core.XML",
-        "lib/windows8/AWSSDK.Core.dll",
-        "lib/windows8/AWSSDK.Core.pdb",
+        "lib/win8/AWSSDK.Core.XML",
+        "lib/win8/AWSSDK.Core.dll",
+        "lib/win8/AWSSDK.Core.pdb",
         "lib/wp8/AWSSDK.Core.XML",
         "lib/wp8/AWSSDK.Core.dll",
         "lib/wp8/AWSSDK.Core.pdb",
@@ -2240,14 +2242,21 @@
         "tools/account-management.ps1"
       ]
     },
-    "AWSSDK.S3/3.3.1.1": {
-      "sha512": "4fJQPlSwJ6GGDSlS3LpZPT6HiZ1ak+w3axr4XgyJoQA5WYKKSaL8/VIkqpXEuFw+V6wW1KHkIE2P9d9AQGgMAw==",
+    "AWSSDK.S3/3.3.5.1": {
+      "sha512": "+n8mfuFEum7yWUUzMjewboBRaJ6uLZEco7AflmWPzU3CeajO3G25sItVMUi4MYGEDCJC/3MfpQy6GWOHkFhaDw==",
       "type": "package",
-      "path": "AWSSDK.S3/3.3.1.1",
+      "path": "AWSSDK.S3/3.3.5.1",
       "files": [
-        "AWSSDK.S3.3.3.1.1.nupkg.sha512",
+        "AWSSDK.S3.3.3.5.1.nupkg.sha512",
         "AWSSDK.S3.nuspec",
         "analyzers/dotnet/cs/AWSSDK.S3.CodeAnalysis.dll",
+        "lib/MonoAndroid10/AWSSDK.S3.XML",
+        "lib/MonoAndroid10/AWSSDK.S3.dll",
+        "lib/MonoTouch10/AWSSDK.S3.XML",
+        "lib/MonoTouch10/AWSSDK.S3.dll",
+        "lib/MonoTouch10/AWSSDK.S3.pdb",
+        "lib/Xamarin.iOS10/AWSSDK.S3.XML",
+        "lib/Xamarin.iOS10/AWSSDK.S3.dll",
         "lib/net35/AWSSDK.S3.XML",
         "lib/net35/AWSSDK.S3.dll",
         "lib/net35/AWSSDK.S3.pdb",
@@ -2257,12 +2266,9 @@
         "lib/netstandard1.3/AWSSDK.S3.dll",
         "lib/netstandard1.3/AWSSDK.S3.pdb",
         "lib/netstandard1.3/AWSSDK.S3.xml",
-        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/AWSSDK.S3.XML",
-        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/AWSSDK.S3.dll",
-        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10/AWSSDK.S3.pdb",
-        "lib/uap/AWSSDK.S3.XML",
-        "lib/uap/AWSSDK.S3.dll",
-        "lib/uap/AWSSDK.S3.pdb",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.S3.XML",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.S3.dll",
+        "lib/portable-net45+win8+wpa81+wp8/AWSSDK.S3.pdb",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
@@ -6048,7 +6054,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
-      "AWSSDK.S3 >= 3.3.1.1",
+      "AWSSDK.S3 >= 3.3.*",
       "Microsoft.AspNetCore.DataProtection >= 1.0.0",
       "PCLCrypto >= 2.0.147"
     ],
